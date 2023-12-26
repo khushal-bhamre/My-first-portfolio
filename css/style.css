@@ -57,28 +57,39 @@ a:hover {
   background-attachment: fixed;
 }
 
-.skill-row {
-  width: 80%; /* Adjusted width for responsiveness */
+.skill-row,
+.intro,
+.contact {
+  width: 80%;
   margin: auto;
   text-align: left;
 }
 
-.intro {
-  width: 80%; /* Adjusted width for responsiveness */
-  margin: auto;
-}
-
-.contact {
-  width: 80%; /* Adjusted width for responsiveness */
-  margin: 40px auto 40px;
-}
-
 .btn {
-  /* ... (unchanged) */
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-family: 'montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }
 
 .btn:hover {
-  /* ... (unchanged) */
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
 }
 
 .bottom {
@@ -93,46 +104,47 @@ a:hover {
 }
 
 .A {
-  /* ... (unchanged) */
+  position: absolute;
+  right: 15px; /* Adjusted for responsiveness */
+  top: 10px; /* Adjusted for responsiveness */
 }
 
 .B {
-  width: 80%; /* Adjusted width for responsiveness */
+  width: 80%;
 }
 
 .C {
-  /* ... (unchanged) */
+  position: absolute;
+  left: 15px; /* Adjusted for responsiveness */
+  bottom: 10px; /* Adjusted for responsiveness */
 }
 
 .D {
-  width: 80%; /* Adjusted width for responsiveness */
+  width: 80%;
   height: auto;
 }
 
-.E {
-  margin-right: 0; /* No margin on small screens */
-  width: 100%; /* Full width on small screens */
-  float: none; /* No float on small screens */
-}
-
+.E,
 .F {
-  margin-left: 0; /* No margin on small screens */
-  width: 100%; /* Full width on small screens */
-  float: none; /* No float on small screens */
+  margin: 0;
+  width: 100%;
+  float: none;
 }
 
-@media (max-width: 768px) {
-  /* Adjust styles for medium screens */
-  .skill-row,
-  .intro,
-  .contact {
-    width: 100%;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
   }
-
-  .E,
-  .F {
-    width: 100%;
-    margin: 0;
-    float: none;
+  h2 {
+    font-size: 1rem;
+  }
+  .B {
+    width: 100%; /* Full width on small screens */
+  }
+  .C {
+    width: 100%; /* Full width on small screens */
+  }
+  .A {
+    width: 100px;
   }
 }
