@@ -89,4 +89,61 @@ a:hover {
   background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  tex
+  text-decoration: none;
+}
+
+.bottom {
+  background-color: #11cdd4;
+  padding: 50px 0 20px 0;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 10px 0;
+}
+
+.A {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 100px;
+}
+
+.B {
+  width: 80%;
+}
+
+.C {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 100px;
+}
+
+.D {
+  width: 100%; /* Adjusted for responsiveness */
+  height: auto;
+}
+
+.E,
+.F {
+  margin: 0;
+  width: 100%;
+  float: none;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .B, .C, .D {
+    width: 100%;
+  }
+  .A {
+    width: 80px;
+  }
+}
