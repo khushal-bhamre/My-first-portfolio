@@ -62,7 +62,7 @@ a:hover {
 .contact {
   width: 80%;
   margin: auto;
-  text-align: left;
+/*   text-align: left; */
 }
 
 .btn {
@@ -122,14 +122,14 @@ a:hover {
 }
 
 .D {
-  width: 100%; /* Adjusted for responsiveness */
-  height: auto;
+  width: 50%; /* Adjusted for responsiveness */
+  height: 50%;
 }
 
 .E,
 .F {
   margin: 0;
-  width: 100%;
+  width: 50%;
   float: none;
 }
 
